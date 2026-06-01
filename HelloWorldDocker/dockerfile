@@ -1,0 +1,11 @@
+# Hvilken version eller hvilket Python image skal vi bruge?
+FROM python:3.14-slim
+
+# Angive arbejds directory
+WORKDIR /app
+
+# kopier alle filer fra roden af mappen til roden af imaget
+COPY . .
+
+# køre scriptet, når Docker contatineren starter
+CMD ["python", "HelloWorld.py"]
