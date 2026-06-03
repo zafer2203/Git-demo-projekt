@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: 'https://github.com/zafer2203/Git-demo-projekt.git'
     targetRevision: main
-    path: HelloArgoCD
+    path: ArgoCD-opgave
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: default
