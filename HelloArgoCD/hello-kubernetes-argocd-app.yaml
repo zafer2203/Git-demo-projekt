@@ -10,7 +10,6 @@ spec:
     targetRevision: main
     path: HelloWorldKubernetes
   destination:
-
     server: 'https://kubernetes.default.svc'
     namespace: default
   syncPolicy:
