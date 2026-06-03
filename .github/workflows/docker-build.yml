@@ -20,7 +20,7 @@ jobs:
            run:  echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
 
          - name: build and push docker image
-           run: docker build -t ghcr.io/${{ github.repository_owner }}/argocd-opgave:latest ./argocd-opgave
+           run: docker build -t ghcr.io/${{ github.repository_owner }}/argocd-opgave:latest ./ArgoCD-opgave
 
          - name: run docker image (detached mode)
            run: docker run -d ghcr.io/${{ github.repository_owner }}/argocd-opgave:latest
