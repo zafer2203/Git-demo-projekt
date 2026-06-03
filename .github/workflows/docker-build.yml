@@ -20,11 +20,11 @@ jobs:
            run:  echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
 
          - name: build and push docker image
-           run: docker build -t ghcr.io/${{ github.repository_owner }}/hello-kubernetes:latest ./HelloWorldKubernetes
+           run: docker build -t ghcr.io/${{ github.repository_owner }}/ArgoCD-opgave:latest ./ArgoCD-opgave
 
          - name: run docker image (detached mode)
-           run: docker run -d ghcr.io/${{ github.repository_owner }}/hello-kubernetes:latest
+           run: docker run -d ghcr.io/${{ github.repository_owner }}/ArgoCD-opgave:latest
 
          - name: push docker image to registry
-           run: docker push ghcr.io/${{ github.repository_owner }}/hello-kubernetes:latest
+           run: docker push ghcr.io/${{ github.repository_owner }}/ArgoCD-opgave:latest
 

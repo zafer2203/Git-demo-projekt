@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-kubernetes
+  name: ArgoCD-opgave
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: hello-kubernetes
+      app: ArgoCD-opgave
   template:
     metadata:
       labels:
-        app: hello-kubernetes
+        app: ArgoCD-opgave
     spec:
       containers:
-      - name: hello-kubernetes
-        image: ghcr.io/zafer2203/hello-kubernetes:latest
+      - name: ArgoCD-opgave
+        image: ghcr.io/zafer2203/ArgoCD-opgave:latest
         imagePullPolicy: Always

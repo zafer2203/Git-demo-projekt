@@ -8,4 +8,4 @@ WORKDIR /app
 COPY . .
 
 # køre scriptet, når Docker contatineren starter
-CMD ["python", "HelloWorld.py"]
+CMD ["python", "Opgave.py"]
