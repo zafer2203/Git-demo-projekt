@@ -1,9 +1,10 @@
+#Importere time biblioteket for at kunne bruge sleep-funktionen
 import time
 
 
 myMessage = "self destructing in"
 
-
+# Printer "Hello, World!"
 print(("Hello, World!"), flush=True)
 
 # for-loop
