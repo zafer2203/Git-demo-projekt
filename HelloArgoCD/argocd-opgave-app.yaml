@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: ArgoCD-Opgave
+  name: argocd-opgave
   namespace: argocd
 spec:
   project: default
   source:
     repoURL: 'https://github.com/zafer2203/Git-demo-projekt.git'
     targetRevision: main
-    path: HelloWorldKubernetes
+    path: argocd-opgave
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: default
