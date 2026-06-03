@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: hello-kubernetes-test
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: 'https://github.com/zafer2203/Git-demo-projekt.git'
+    targetRevision: main
+    path: HelloWorldKubernetes
+  destination:
+
+    server: 'https://kubernetes.default.svc'
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
