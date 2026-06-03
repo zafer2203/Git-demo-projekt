@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ArgoCD-opgave
+  name: argocd-opgave
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ArgoCD-opgave
+      app: argocd-opgave
   template:
     metadata:
       labels:
-        app: ArgoCD-opgave
+        app: argocd-opgave
     spec:
       containers:
-      - name: ArgoCD-opgave
-        image: ghcr.io/zafer2203/ArgoCD-opgave:latest
+      - name: argocd-opgave
+        image: ghcr.io/zafer2203/argocd-opgave:latest
         imagePullPolicy: Always
