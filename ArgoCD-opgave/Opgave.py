@@ -14,3 +14,5 @@ value = i
 
 if value == 0:
     print("BOOM! Self destructed!")
+
+#testtest
